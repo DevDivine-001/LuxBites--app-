@@ -10,6 +10,10 @@ const Navbar = () => {
                     <li>Mobile app</li>
                     <li>Contact Us</li>
                 </ul>
+
+                <div>
+
+                </div>
             </div>
         </div>
     )
