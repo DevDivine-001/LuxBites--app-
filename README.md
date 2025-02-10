@@ -83,7 +83,7 @@ This project is licensed under the MIT License – feel free to use and modify i
 💬 Have questions or feedback? Reach out!<br/>
 
 🌐 Website<br/>
-📧 Email: support@luxbites.com<br/>
+📧 Email: Devcodes4dev@gmail.com  & support@luxbites.com<br/>
 🐦 Linkedin: (https://www.linkedin.com/in/divineuwandu/)<br/>
 🔥 LuxBites – Because Every Bite Should Be Luxurious! 🍽️🚀<br/>
 
