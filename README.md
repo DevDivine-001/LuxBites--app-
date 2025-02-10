@@ -4,7 +4,7 @@ LuxBites is a modern food delivery and restaurant discovery platform designed to
 LuxBites – Premium food, premium experience.
 
 🚀 Features
-✅ AI-Powered Food Recommendations – Personalized meal suggestions based on your taste.
+✅ AI-Powered Food Recommendations – Personalized meal suggestions based on your taste. <br/>
 ✅ Seamless Ordering & Delivery – Fast, easy checkout with real-time tracking.
 ✅ Interactive Menu – High-quality images and detailed meal descriptions.
 ✅ Loyalty Rewards & Discounts – Exclusive deals for returning customers.
