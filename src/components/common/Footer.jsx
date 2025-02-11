@@ -1,7 +1,10 @@
 
 const Footer = () => {
     return (
-        <div>Footer</div>
+        <div className="flex flex-col">
+            Footer
+
+        </div>
     )
 }
 

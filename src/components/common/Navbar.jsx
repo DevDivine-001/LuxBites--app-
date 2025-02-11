@@ -4,10 +4,10 @@ import { assets } from "../../assets/frontend_assets/assets"
 const Navbar = () => {
     const [Menu, setMenu] = useState("home")
     return (
-        <header className="flex justify-center items-center w-full h-[12vh]  top-0 z-20">
+        <header className="flex justify-center items-center w-full h-[12vh]  top-0 z-20 sticky bg-[#fff] shadow-md">
             <div className="flex justify-between items-center w-[88%]">
                 <img src={assets.logo} alt="" />
-                <ul className="flex space-x-8 justify-center items-center text-[#49557e] text-[17px] cursor-pointer ">
+                <ul className="flex space-x-8 justify-center items-center text-[#49557e] text-[17px] cursor-pointer max-md:hidden xl:flex">
                     <ul className="flex space-x-8 justify-center items-center text-[#49557e] text-[17px] cursor-pointer">
                         <li
                             onClick={() => setMenu("home")}
@@ -37,7 +37,7 @@ const Navbar = () => {
 
                 </ul>
 
-                <div className="flex space-x-9 justify-center items-center">
+                <div className="flex space-x-9 justify-center items-center cursor-pointer max-md:hidden">
                     <img src={assets.search_icon} alt="" />
                     <div>
                         <img src={assets.basket_icon} alt="" />

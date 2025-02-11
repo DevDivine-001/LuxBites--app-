@@ -5,7 +5,7 @@ import HomeScreen from "./pages/Homescreen"
 
 const App = () => {
   return (
-    <div>
+    <div >
       <Navbar />
       <HomeScreen />
       <Footer />
