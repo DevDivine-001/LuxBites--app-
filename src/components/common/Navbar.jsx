@@ -7,7 +7,7 @@ const Navbar = () => {
         <header className="flex justify-center items-center w-full h-[12vh]  top-0 z-20 sticky bg-[#fff] shadow-md">
             <div className="flex justify-between items-center w-[88%]">
                 <img src={assets.logo} alt="" />
-                <ul className="flex space-x-8 justify-center items-center text-[#49557e] text-[17px] cursor-pointer max-md:hidden xl:flex">
+                <ul className="flex space-x-8 justify-center items-center text-[#49557e] text-[17px] cursor-pointer max-md:hidden xl:flex max-lg:hidden">
                     <ul className="flex space-x-8 justify-center items-center text-[#49557e] text-[17px] cursor-pointer">
                         <li
                             onClick={() => setMenu("home")}
@@ -37,13 +37,13 @@ const Navbar = () => {
 
                 </ul>
 
-                <div className="flex space-x-9 justify-center items-center cursor-pointer max-md:hidden">
+                <div className="flex space-x-9 justify-center items-center cursor-pointer max-md:hidden max-lg:hidden">
                     <img src={assets.search_icon} alt="" />
                     <div>
                         <img src={assets.basket_icon} alt="" />
                         <div className="absolute flex w-[10px] h-[10px] bg-[tomato] rounded-full top-4 ml-[24px]"></div>
                     </div>
-                    <button className="px-[25px] py-[7px] rounded-full text-[#49557e] border border-solid cursor-pointer transition duration-300 hover:bg-[#fff4f2]">Sign-In</button>
+                    <button className="px-[25px] py-[7px] rounded-full text-[#49557e] border border-solid cursor-pointer transition duration-700 hover:bg-[#fff4f2]">Sign-In</button>
 
                 </div>
             </div>
