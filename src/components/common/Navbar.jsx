@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { assets } from "../../assets/frontend_assets/assets"
+import { RiMenu3Fill } from "react-icons/ri";
 
 const Navbar = () => {
     const [Menu, setMenu] = useState("home")
@@ -46,7 +47,9 @@ const Navbar = () => {
                     <button className="px-[25px] py-[7px] rounded-full text-[#49557e] border border-solid cursor-pointer transition duration-700 hover:bg-[#fff4f2]">Sign-In</button>
 
                 </div>
-                <div className="w-[50px] h-[50px] bg-amber-400 rounded-full max-2xl:hidden max-md:flex max-lg:flex"></div>
+                <div className="w-[50px] h-[50px] bg-amber-400 rounded-full max-2xl:hidden max-md:flex max-lg:flex">
+                    <RiMenu3Fill />
+                </div>
             </div>
         </header>
     )
