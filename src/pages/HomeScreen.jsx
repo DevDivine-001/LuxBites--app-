@@ -9,7 +9,7 @@ const HomeScreen = () => {
         <div>
             <Hero />
             <MenuItems category={category} setCategory={setCategory} />
-            <TopDishes />
+            <TopDishes category={category} setCategory={setCategory} />
         </div>
     )
 }

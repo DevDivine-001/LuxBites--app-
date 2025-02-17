@@ -47,8 +47,8 @@ const Navbar = () => {
                     <button className="px-[25px] py-[7px] rounded-full text-[#49557e] border border-solid cursor-pointer transition duration-700 hover:bg-[#fff4f2]">Sign-In</button>
 
                 </div>
-                <div className="w-[50px] h-[50px] bg-amber-400 rounded-full max-2xl:hidden max-md:flex max-lg:flex">
-                    <RiMenu3Fill />
+                <div className="w-[50px] h-[50px] bg-white-400 rounded-full max-2xl:hidden max-md:flex max-lg:flex flex justify-center items-center  hover:shadow-md transition-all duration-700">
+                    <RiMenu3Fill size={27} className="cursor-pointer hover:text-[tomato] transition-all duration-700" />
                 </div>
             </div>
         </header>

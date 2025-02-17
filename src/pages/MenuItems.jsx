@@ -8,10 +8,10 @@ const MenuItems = ({ category, setCategory }) => {
                 <p className="font-semibold text-[15px] max-md:text-[15px] max-lg:text-[19px]"> Indulge in rich, gourmet flavors crafted for true food lovers. 🍔🍣 From sizzling delights to sweet treats,<br className="max-md:hidden max-lg:hidden " /> every bite is perfection. 🍕🥗<br className="max-md:hidden " /> Enjoy effortless ordering, fast delivery, and a five-star dining <br className="max-md:hidden max-lg:hidden  max-2xl:hidden " /> experience from the comfort of your home.</p>
                 <div className="flex  gap-6 text-center  overflow-x-auto snap-x snap-mandatory max-md:text-sm cursor-pointer">
                     {menu_list?.map((item, index) => (
-                        <div className="flex justify-center items-center flex-col gap-3 max-md:min-w-[75px]" key={index} onClick={() => setCategory(prev => prev === item.menu_name ? "All" : item.menu_name)}>
+                        <div className="flex justify-center items-center flex-col gap-3 max-md:min-w-[80px]" key={index} onClick={() => setCategory(prev => prev === item.menu_name ? "All" : item.menu_name)}>
                             <img src={item.menu_image}
                                 alt={item.menu_name}
-                                className={` object-cover rounded-full transition-all duration-100  ${category === item.menu_name ? " border-red-500 border p-1.5 scale-100" : ""
+                                className={` object-cover rounded-full transition-all duration-500 text-red-500  ${category === item.menu_name ? " border-red-500 border-2 p-1  text-red-500 transition-all duration-500" : ""
                                     }`}
 
                             />
@@ -20,6 +20,7 @@ const MenuItems = ({ category, setCategory }) => {
 
                     ))}
                 </div>
+                <hr className="text-gray-200  border-1" />
             </div>
         </div>
     )
