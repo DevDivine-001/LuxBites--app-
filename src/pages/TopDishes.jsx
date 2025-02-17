@@ -1,3 +1,4 @@
+import { food_list } from "../assets/frontend_assets/assets"
 import FoodItems from "./Fooditems"
 
 
@@ -13,8 +14,8 @@ const TopDishes = ({ category }) => {
 
 
                 <div className=" justify-center   flex-wrap  items-center gap-9 grid grid-cols-4 max-md:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 max-xl:gap-12  max-md:gap-6">
-                    {/* {
-                        food_list?.map((item) => (
+                    {food_list?.length > 0 ? (
+                        food_list.map((item) => (
                             <FoodItems
                                 key={item.id}
                                 id={item.id}
@@ -24,8 +25,10 @@ const TopDishes = ({ category }) => {
                                 image={item.image}
                             />
                         ))
-                    } */}
-                    <FoodItems />
+                    ) : (
+                        <p className="text-center text-gray-600">No dishes available</p>
+                    )}
+                    {/* <FoodItems /> */}
 
                 </div>
 
