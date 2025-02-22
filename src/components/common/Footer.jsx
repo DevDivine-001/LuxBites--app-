@@ -2,8 +2,8 @@ import { assets } from "../../assets/frontend_assets/assets"
 
 const Footer = () => {
     return (
-        <div className="flex justify-center items-center w-full flex-col bg-[#000] ">
-            <div className="w-[88%] flex justify-between items-center py-10 gap-8 flex-col">
+        <div className="flex justify-center items-center w-full flex-col bg-[#000] h-[60vh] mt-15 max-md:mt-8">
+            <div className="w-[88%] flex justify-between items-center  gap-0 flex-col  h-[45vh] py-6">
                 <div className="w-full justify-between  flex flex-wrap max-md:gap-5">
                     <div className="flex-col flex gap-3 text-[#d9d9d9]">
                         <div>
@@ -34,7 +34,7 @@ const Footer = () => {
 
                     </div>
                 </div>
-                <div className="flex flex-col justify-center items-center w-full gap-2">
+                <div className="flex flex-col justify-center items-center w-full gap-3 py-2 max-md:text-sm">
                     <hr className="text-gray-200  border-1 w-full" />
 
                     <p className="text-[#d9d9d9] text-center">LuxBites Copyright 2025 ©️ Tomato.com - All Right Reserved </p>
