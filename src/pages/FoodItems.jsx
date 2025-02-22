@@ -1,8 +1,10 @@
-import { useState } from "react"
+import { useContext, } from "react"
 import { assets, } from "../assets/frontend_assets/assets"
+import { StoreContext } from "../Store/StoreContext"
 
-const FoodItems = ({ image, price, description, name }) => {
-    const [count, setCount] = useState(0)
+const FoodItems = ({ id, image, price, description, name }) => {
+    // const [count, setCount] = useState(0)
+    const { cartItems, addToCart, removeFromCart } = useContext(StoreContext)
     return (
         <>
 
@@ -10,10 +12,10 @@ const FoodItems = ({ image, price, description, name }) => {
                 <div className="w-full  object-cover flex justify-center items-center rounded-t-md relative">
                     <img src={image} alt="" className="object-cover rounded-t-md max-md:w-full                     " />
                     <div className="absolute flex text-[#000] right-1 bottom-2">
-                        {!count ? <img onClick={() => setCount(prev => prev + 1)} src={assets.add_icon_white} /> : <div className="bg-white gap-2 flex items-center justify-center p-1 rounded-full">
-                            <img src={assets.remove_icon_red} alt="" onClick={() => setCount(prev => prev - 1)} />
-                            <p>{count}</p>
-                            <img src={assets.add_icon_green} alt="" onClick={() => setCount(prev => prev + 1)} />
+                        {!cartItems[id] ? <img onClick={() => addToCart(id)} src={assets.add_icon_white} /> : <div className="bg-white gap-2 flex items-center justify-center p-1 rounded-full">
+                            <img src={assets.remove_icon_red} alt="" onClick={() => removeFromCart(id)} />
+                            <p>{cartItems[id]}</p>
+                            <img src={assets.add_icon_green} alt="" onClick={() => addToCart(id)} />
                         </div>
                         }
                     </div>
